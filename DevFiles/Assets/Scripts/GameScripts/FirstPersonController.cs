@@ -22,6 +22,8 @@ public class FirstPersonController : MonoBehaviour
 
     public Interactable currentInteractable;
 
+    public bool canMove;
+
     private void Start()
     {
         mainCam = Camera.main;
@@ -32,23 +34,35 @@ public class FirstPersonController : MonoBehaviour
         TestInteract();
     }
 
-
     private void Update()
     {
-        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+        if (canMove)
         {
-            MoveCharacter();
-        }
+            if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+            {
+                MoveCharacter();
+            }
 
-        if (Input.GetAxis("Mouse X") != 0 || Input.GetAxis("Mouse Y") != 0)
-        {
-            RotateCharacter();
-        }
+            if (Input.GetAxis("Mouse X") != 0 || Input.GetAxis("Mouse Y") != 0)
+            {
+                RotateCharacter();
+            }
 
-        if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null)
-        {
-            Interact();
+            if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null)
+            {
+                Interact();
+            }
+
+            if (Input.GetKeyDown(KeyCode.M))
+            {
+                MapUI.instance.ToggleMap(true);
+            }
         }
+    }
+
+    public void ToggleMovement(bool toggle)
+    {
+        canMove = toggle;
     }
 
     private void TestInteract()
@@ -61,10 +75,14 @@ public class FirstPersonController : MonoBehaviour
 
             if (interactableItem != null)
             {
+                
                 currentInteractable = interactableItem;
+                currentInteractable.DisplayInteractionText(true);
             }
             else
             {
+                if (currentInteractable != null) currentInteractable.DisplayInteractionText(false);
+
                 currentInteractable = null;
             }
         }
