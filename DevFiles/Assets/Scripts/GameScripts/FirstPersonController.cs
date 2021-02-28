@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,34 +20,82 @@ public class FirstPersonController : MonoBehaviour
     public Vector2 xyRotationSpeed;
     public float speed;
 
+    public Interactable currentInteractable;
+
     private void Start()
     {
         mainCam = Camera.main;
     }
 
+    private void FixedUpdate()
+    {
+        TestInteract();
+    }
+
+
     private void Update()
     {
-        if (Input.GetAxis("Horizontal") != 0 && Input.GetAxis("Vertical") != 0)
+        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
         {
             MoveCharacter();
         }
 
-        if (Input.GetAxis("Mouse X") != 0 && Input.GetAxis("Mouse Y") != 0)
+        if (Input.GetAxis("Mouse X") != 0 || Input.GetAxis("Mouse Y") != 0)
         {
             RotateCharacter();
         }
+
+        if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null)
+        {
+            Interact();
+        }
+    }
+
+    private void TestInteract()
+    {
+        Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, 100))
+        {
+            Interactable interactableItem = hit.transform.GetComponent<Interactable>();
+
+            if (interactableItem != null)
+            {
+                currentInteractable = interactableItem;
+            }
+            else
+            {
+                currentInteractable = null;
+            }
+        }
+
+    }
+
+    public void Interact()
+    {
+        currentInteractable.Interact();
     }
 
     public void RotateCharacter()
     {
-        
+        float yRotation = Input.GetAxis("Mouse X") * xyRotationSpeed.y * Time.deltaTime;
+        float xRotation = Input.GetAxis("Mouse Y") * xyRotationSpeed.x * Time.deltaTime;
+
+        transform.Rotate(new Vector3(0, yRotation, 0));
+
+        if (true)//test to make sure rotation is properly clamped
+        {
+            mainCam.transform.Rotate(xRotation, 0, 0);
+        }
     }
 
     public void MoveCharacter()
     {
-        float XMovement = Input.GetAxis("Horizontal");
-        float ZMovement = Input.GetAxis("Vertical");
-        Vector3 movementDirection = new Vector3(Input.GetAxis())
+        float xMovement = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+        float zMovement = Input.GetAxis("Vertical") * speed * Time.deltaTime;
+        Vector3 movementDirection = new Vector3(xMovement, 0, zMovement);
+
+        transform.Translate(movementDirection);
     }
 
 }
