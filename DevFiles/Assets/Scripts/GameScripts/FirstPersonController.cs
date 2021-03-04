@@ -53,10 +53,25 @@ public class FirstPersonController : MonoBehaviour
                 Interact();
             }
 
-            if (Input.GetKeyDown(KeyCode.M))
+            
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+
+            if (MapUI.instance.mapObject.activeSelf)
+            {
+                MapUI.instance.ToggleMap(false);
+            }
+            else
             {
                 MapUI.instance.ToggleMap(true);
             }
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            MapUI.instance.ToggleMap(false);
         }
     }
 

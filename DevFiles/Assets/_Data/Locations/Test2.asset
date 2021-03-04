@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: testLocation2
+  m_Name: Test2
   m_EditorClassIdentifier: Assembly-CSharp::Location
-  position: {x: 0.3, y: 0.7}
-  locationName: Test Location 2
-  locationDescription: 
-  locationSprite: {fileID: 21300000, guid: 126cc579f9db38c4f86bb2e27c801fb9, type: 3}
-  locationSceneName: location 2
+  position: {x: 0.1, y: 0.75}
+  locationName: Midnight
+  locationDescription: Where Dusk lies at its peak and all is but the silent darkness
+    that guides us to ourselves with but the faintest whisper.
+  locationSprite: {fileID: 21300000, guid: 57fddd8b9308e014ca623b7e8a612e1f, type: 3}
+  locationSceneName: ConceptTest
   hasDiscovered: 1
+  requiredDiscoveries: []

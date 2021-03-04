@@ -334,6 +334,7 @@ MonoBehaviour:
   xyRotationSpeed: {x: -100, y: 100}
   speed: 10
   currentInteractable: {fileID: 0}
+  canMove: 1
 --- !u!1 &4976601965303505992
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,6 +381,9 @@ MonoBehaviour:
   loadOnAwake: 0
   achievementScore: 0
   achievementProgress: 
+  allArtifacts:
+  - {fileID: 11400000, guid: f76ec5d1400e8f3448ff6faf2c76d277, type: 2}
+  gatheredArtifacts: []
 --- !u!1 &4976601965685415072
 GameObject:
   m_ObjectHideFlags: 0

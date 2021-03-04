@@ -9,4 +9,9 @@ public class Artifact_ScriptableObject : ScriptableObject
     
     [TextArea(15, 20)]
     public string artifactDescription;
+
+    public void GatheredArtifact()
+    {
+        if (!PlayerProfile.instance.gatheredArtifacts.Contains(this)) PlayerProfile.instance.gatheredArtifacts.Add(this);
+    }
 }

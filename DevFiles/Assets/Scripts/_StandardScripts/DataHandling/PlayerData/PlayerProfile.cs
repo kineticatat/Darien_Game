@@ -29,6 +29,8 @@ public class PlayerProfile : MonoBehaviour
     public int achievementScore;
     public int[] achievementProgress;
 
+    public List<Artifact_ScriptableObject> allArtifacts = new List<Artifact_ScriptableObject>();
+    public List<Artifact_ScriptableObject> gatheredArtifacts = new List<Artifact_ScriptableObject>();
 
     public void SaveGame()
     {
