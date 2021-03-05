@@ -99,4 +99,10 @@ public class Location : ScriptableObject
     public bool hasDiscovered;
 
     public Artifact_ScriptableObject[] requiredDiscoveries;
+
+    public Location(string locationName, string descriptionName)
+    {
+        this.locationName = locationName;
+        this.locationDescription = descriptionName;
+    }
 }
