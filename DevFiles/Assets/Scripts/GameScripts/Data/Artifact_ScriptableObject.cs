@@ -9,9 +9,13 @@ public class Artifact_ScriptableObject : ScriptableObject
     
     [TextArea(15, 20)]
     public string artifactDescription;
+    public bool hasBeenDiscovered = false;
 
     public void GatheredArtifact()
     {
+        hasBeenDiscovered = true;
+        MapUI.instance.CheckForAddedLocations();
+        Notebook.instance.AddEntry(this);
         if (!PlayerProfile.instance.gatheredArtifacts.Contains(this)) PlayerProfile.instance.gatheredArtifacts.Add(this);
     }
 

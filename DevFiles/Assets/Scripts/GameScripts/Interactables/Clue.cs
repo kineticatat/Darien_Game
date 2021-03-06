@@ -8,10 +8,11 @@ public class Clue : Interactable
 
     public override void Interact()
     {
-        base.Interact();
 
         FirstPersonController.instance.ToggleMovement(false);
         InspectionMenuUI.instance.menuParent.SetActive(true);
         InspectionMenuUI.instance.InspectClue(this);
+
+        data.GatheredArtifact();
     }
 }

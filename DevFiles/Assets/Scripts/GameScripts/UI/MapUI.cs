@@ -44,7 +44,7 @@ public class MapUI : MonoBehaviour
         }
     }
 
-    private void AddLocationIcon(Location location)
+    public void AddLocationIcon(Location location)
     {
         GameObject newIcon = Instantiate(mapIconPrefab, mapIconParent);
 
@@ -63,7 +63,10 @@ public class MapUI : MonoBehaviour
 
     public void CheckForAddedLocations()
     {
-
+        foreach (Location location in allLocations)
+        {
+            location.CheckForUnlock();
+        }
     }
 
     public void SelectLocation(Location location)
@@ -77,6 +80,7 @@ public class MapUI : MonoBehaviour
 
     public void GoToSelectedLocation()
     {
+        Notebook.instance.AddEntry(selectedLocation);
         GameManager.instance.GoToSceneName(selectedLocation.locationSceneName);
     }
 
@@ -104,5 +108,21 @@ public class Location : ScriptableObject
     {
         this.locationName = locationName;
         this.locationDescription = descriptionName;
+    }
+
+    public void CheckForUnlock()
+    {
+        if (!hasDiscovered)
+        {
+            foreach (Artifact_ScriptableObject artifact_ScriptableObject in requiredDiscoveries)
+            {
+                if (!artifact_ScriptableObject.hasBeenDiscovered)
+                {
+                    return;
+                }
+            }
+            hasDiscovered = true;
+            MapUI.instance.AddLocationIcon(this);
+        }
     }
 }

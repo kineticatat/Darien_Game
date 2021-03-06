@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: Test2
   m_EditorClassIdentifier: Assembly-CSharp::Location
   position: {x: 0.1, y: 0.75}
-  locationName: Midnight
-  locationDescription: Where Dusk lies at its peak and all is but the silent darkness
-    that guides us to ourselves with but the faintest whisper.
-  locationSprite: {fileID: 21300000, guid: 57fddd8b9308e014ca623b7e8a612e1f, type: 3}
+  locationName: Nearby Community
+  locationDescription: This artifact is something that is pretty close to one of
+    Linne's findings, but looks like its been word and brought to this location recently,
+    I wonder if one of the community members could help me in finding the spot that
+    this artifact was moved their from?
+  locationSprite: {fileID: 21300000, guid: 2339da2dc2056104a977b0340a033e35, type: 3}
   locationSceneName: ConceptTest
-  hasDiscovered: 1
-  requiredDiscoveries: []
+  hasDiscovered: 0
+  requiredDiscoveries:
+  - {fileID: 11400000, guid: f76ec5d1400e8f3448ff6faf2c76d277, type: 2}

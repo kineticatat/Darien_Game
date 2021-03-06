@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Test3
   m_EditorClassIdentifier: Assembly-CSharp::Location
   position: {x: 0.3, y: 0.55}
-  locationName: doubleO
-  locationDescription: bfiwrebvnerknv
-  locationSprite: {fileID: 21300016, guid: 27ba0869e77cb7c4a8fc9f670a0593fe, type: 3}
+  locationName: Down River Expedition
+  locationDescription: This item could have been placed here by the flooding of a
+    local river, perhaps paying a trip up stream could lead some results.
+  locationSprite: {fileID: 21300000, guid: ad69a0597e9b00542a17ceafe615e09f, type: 3}
   locationSceneName: ConceptTest
-  hasDiscovered: 1
-  requiredDiscoveries: []
+  hasDiscovered: 0
+  requiredDiscoveries:
+  - {fileID: 11400000, guid: f76ec5d1400e8f3448ff6faf2c76d277, type: 2}

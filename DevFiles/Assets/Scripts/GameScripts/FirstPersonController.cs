@@ -20,6 +20,7 @@ public class FirstPersonController : MonoBehaviour
     public Vector2 xyRotationSpeed;
     public float speed;
 
+    public float interactionDistance = 5f;
     public Interactable currentInteractable;
 
     public bool canMove;
@@ -69,10 +70,21 @@ public class FirstPersonController : MonoBehaviour
                 MapUI.instance.ToggleMap(true);
             }
         }
-        else if (Input.GetKeyDown(KeyCode.Escape))
+        else if (Input.GetKeyDown(KeyCode.N))
         {
-            MapUI.instance.ToggleMap(false);
-        }
+            if (Notebook.instance.notebookUI.activeSelf)
+            {
+                Notebook.instance.notebookUI.SetActive(false);
+                ToggleMovement(true);
+
+            }
+            else
+            {
+                Notebook.instance.notebookUI.SetActive(true);
+                Notebook.instance.DisplayEntries(Notebook.instance.currentEntry);
+                ToggleMovement(false);
+            }
+        } 
     }
 
     public void ToggleMovement(bool toggle)
@@ -84,7 +96,7 @@ public class FirstPersonController : MonoBehaviour
     {
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, 100))
+        if (Physics.Raycast(ray, out hit, interactionDistance))
         {
             Interactable interactableItem = hit.transform.GetComponent<Interactable>();
 

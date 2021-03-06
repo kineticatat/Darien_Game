@@ -33,8 +33,8 @@ public class InspectionMenuUI : MonoBehaviour
 		MeshRenderer meshRenderer = meshObject.GetComponent<MeshRenderer>();
 		MeshFilter meshFilter = meshObject.GetComponent<MeshFilter>();
 
-		MeshRenderer clueMeshRenderer = clue.gameObject.GetComponent<MeshRenderer>();
-		MeshFilter clueMeshFilter = clue.gameObject.GetComponent<MeshFilter>();
+		MeshRenderer clueMeshRenderer = clue.GetComponent<MeshRenderer>();
+		MeshFilter clueMeshFilter = clue.GetComponent<MeshFilter>();
 
 		meshRenderer.material = clueMeshRenderer.material;
 		meshFilter.mesh = clueMeshFilter.mesh;

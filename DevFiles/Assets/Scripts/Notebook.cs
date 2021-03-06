@@ -5,6 +5,19 @@ using UnityEngine.UI;
 
 public class Notebook : MonoBehaviour
 {
+    #region Singleton
+
+    public static Notebook instance;
+
+    public void Awake()
+    {
+        instance = this;
+    }
+
+    #endregion
+
+    public GameObject notebookUI;
+
     public int currentEntry;
     public int entriesPerPage = 1;
 
@@ -13,6 +26,20 @@ public class Notebook : MonoBehaviour
     public Text[] entryTitles;
     public Text[] entryDescriptions;
 
+    public List<Location> startingLocations = new List<Location>();
+
+    public void Start()
+    {
+        InitializeNotebook();
+    }
+
+    public void InitializeNotebook()
+    {
+        foreach (Location location in startingLocations)
+        {
+            AddEntry(location);
+        }
+    }
 
     public void TestEntries()
     {
@@ -34,23 +61,33 @@ public class Notebook : MonoBehaviour
 
     public void AddEntry(Location location)
     {
+        foreach (Entry entry in notebookEntries)
+        {
+            if (entry.type == EntryType.location && entry.location == location)
+            {
+                return;
+            }
+        }
+
         notebookEntries.Add(new Entry(location));
     }
 
     public void AddEntry(Artifact_ScriptableObject artifact)
     {
+        foreach (Entry entry in notebookEntries)
+        {
+            if (entry.type == EntryType.artifact && entry.artifact == artifact)
+            {
+                return;
+            }
+        }
+
         notebookEntries.Add(new Entry(artifact));
     }
 
     public void DisplayEntries(int startingEntry = 0)
     {
         currentEntry = startingEntry;
-
-        if (notebookEntries.Count == 0)
-        {
-            print("No entries to display");
-            return;
-        }
 
         for (int i = startingEntry; i < startingEntry + entriesPerPage*2; i++)
         {
@@ -66,6 +103,11 @@ public class Notebook : MonoBehaviour
                     entryTitles[i - startingEntry].text = notebookEntries[i].location.locationName;
                     entryDescriptions[i - startingEntry].text = notebookEntries[i].location.locationDescription;
                 }
+            }
+            else
+            {
+                entryTitles[i - startingEntry].text = "";
+                entryDescriptions[i - startingEntry].text = "";
             }
         }
 

@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Test1
   m_EditorClassIdentifier: Assembly-CSharp::Location
-  position: {x: 0.5, y: 0.5}
-  locationName: Temple
-  locationDescription: This is a temple. it is where people worship
-  locationSprite: {fileID: 21300000, guid: 9a5fd05d0fba53b498bdd8dca53befe5, type: 3}
+  position: {x: 0.2, y: 0.1}
+  locationName: Trail
+  locationDescription: This is where I started my journey, after talking to some
+    of the local community members I heard that this is a site that has been around
+    since as long as anyone can remember, I wonder if there is anything that may
+    be able to point me in the direction of another site?
+  locationSprite: {fileID: 21300000, guid: c78cc947d44fb07429eb25edf0b95e23, type: 3}
   locationSceneName: ConceptTest
   hasDiscovered: 1
   requiredDiscoveries: []
