@@ -15,8 +15,10 @@ Material:
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - MOTIONVECTORS
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -128,3 +130,4 @@ Material:
     - _deepColor: {r: 0, g: 0.41691345, b: 0.509434, a: 1}
     - _edgeFoamColor: {r: 1, g: 1, b: 1, a: 1}
     - _shallowColor: {r: 0.04338732, g: 0.3679245, b: 0.33547083, a: 1}
+  m_BuildTextureStacks: []
