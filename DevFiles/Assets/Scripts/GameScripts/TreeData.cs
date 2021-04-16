@@ -17,11 +17,10 @@ public class TreeData : MonoBehaviour
 
     public void UpdateUI()
     {
-        if (titleDesc.Length > 0)
+        if (titleDesc.Length > 0 && treeType != null)
         {
             if (titleDesc[0] != null) titleDesc[0].text = treeType.name;
             if (titleDesc[1] != null) titleDesc[1].text = treeType.Description;
-
         }
     }
 }
