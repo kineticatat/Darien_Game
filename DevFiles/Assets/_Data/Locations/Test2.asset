@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Test2
   m_EditorClassIdentifier: Assembly-CSharp::Location
-  position: {x: 0.1, y: 0.75}
+  position: {x: 0.3, y: 0.45}
   locationName: Nearby Community
   locationDescription: This artifact is something that is pretty close to one of
     Linne's findings, but looks like its been word and brought to this location recently,

@@ -12,6 +12,7 @@
     "com.unity.polybrush": "1.0.1",
     "com.unity.postprocessing": "2.3.0",
     "com.unity.probuilder": "4.2.3",
+    "com.unity.recorder": "2.5.5",
     "com.unity.render-pipelines.high-definition": "8.2.0",
     "com.unity.render-pipelines.high-definition-config": "file:../LocalPackages/com.unity.render-pipelines.high-definition-config",
     "com.unity.test-framework": "1.1.14",

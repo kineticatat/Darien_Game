@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Test3
   m_EditorClassIdentifier: Assembly-CSharp::Location
-  position: {x: 0.3, y: 0.55}
+  position: {x: 0.7, y: 0.6}
   locationName: Down River Expedition
   locationDescription: This item could have been placed here by the flooding of a
     local river, perhaps paying a trip up stream could lead some results.

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Test1
   m_EditorClassIdentifier: Assembly-CSharp::Location
-  position: {x: 0.2, y: 0.1}
+  position: {x: 0.2, y: 0.3}
   locationName: Trail
   locationDescription: This is where I started my journey, after talking to some
     of the local community members I heard that this is a site that has been around
