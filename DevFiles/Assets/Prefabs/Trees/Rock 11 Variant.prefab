@@ -60,7 +60,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 6922064595493357759}
   m_Father: {fileID: 4125287063648368}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -127,6 +128,51 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 8562b7717cbc8c9499f3e59d9c2f8570, type: 3}
+--- !u!1 &1698428144187196163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6922064595493357759}
+  - component: {fileID: 2998855536422095059}
+  m_Layer: 0
+  m_Name: Collision
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 85
+  m_IsActive: 1
+--- !u!4 &6922064595493357759
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698428144187196163}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.44, z: 0}
+  m_LocalScale: {x: 2.3407156, y: 0.071045674, z: 0.68223447}
+  m_Children: []
+  m_Father: {fileID: 4309222351279196}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &2998855536422095059
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698428144187196163}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.65
+  m_Height: 6.72
+  m_Direction: 1
+  m_Center: {x: 0, y: 3.08, z: 0}
 --- !u!1001 &7418127989747866683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -272,7 +318,7 @@ PrefabInstance:
     - target: {fileID: 1468679396551969155, guid: 61dac6969ecd49f4d9fa560c8bee57ac,
         type: 3}
       propertyPath: m_Name
-      value: Rock 10 Variant
+      value: Rock 11 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1469577011424732052, guid: 61dac6969ecd49f4d9fa560c8bee57ac,
         type: 3}
