@@ -63,10 +63,12 @@ public class FirstPersonController : MonoBehaviour
 
             if (MapUI.instance.mapObject.activeSelf)
             {
+                AudioManager.instance.Play("map_close");
                 MapUI.instance.ToggleMap(false);
             }
             else
             {
+                AudioManager.instance.Play("map_open");
                 MapUI.instance.ToggleMap(true);
             }
         }
@@ -74,12 +76,14 @@ public class FirstPersonController : MonoBehaviour
         {
             if (Notebook.instance.notebookUI.activeSelf)
             {
+                AudioManager.instance.Play("map_close");
                 Notebook.instance.notebookUI.SetActive(false);
                 ToggleMovement(true);
 
             }
             else
             {
+                AudioManager.instance.Play("map_open");
                 Notebook.instance.notebookUI.SetActive(true);
                 Notebook.instance.DisplayEntries(Notebook.instance.currentEntry);
                 ToggleMovement(false);

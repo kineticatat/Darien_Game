@@ -19,3 +19,6 @@ MonoBehaviour:
     assets folder and going to the option "narrative/New Artifact". Upon clicking,
     Unity will automatically generate a new field that you can fill in this information
     for.
+  sfxName: 
+  artifactImage: {fileID: 21300000, guid: a9c435ff74efbdd45bcda45ca670c8bb, type: 3}
+  hasBeenDiscovered: 1

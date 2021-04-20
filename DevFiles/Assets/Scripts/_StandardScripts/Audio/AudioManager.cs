@@ -124,6 +124,13 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void StopAllAudio()
+    {
+        foreach (AudioSource source in sources)
+        {
+            source.Stop();
+        }
+    }
 }
 
 [System.Serializable]

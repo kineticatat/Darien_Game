@@ -17,5 +17,14 @@ public class GameplaySceneData : MonoBehaviour
     #endregion
 
     public bool isMenuScene;
-    
+    public string[] playSoundsOnStart;
+
+    private void Start()
+    {
+        AudioManager.instance.StopAllAudio();
+        foreach (string song in playSoundsOnStart)
+        {
+            AudioManager.instance.Play(song);
+        }
+    }
 }

@@ -20,6 +20,6 @@ MonoBehaviour:
     this artifact was moved their from?
   locationSprite: {fileID: 21300000, guid: 2339da2dc2056104a977b0340a033e35, type: 3}
   locationSceneName: Rio-Santa-Barbara_Site
-  hasDiscovered: 1
+  hasDiscovered: 0
   requiredDiscoveries:
   - {fileID: 11400000, guid: f76ec5d1400e8f3448ff6faf2c76d277, type: 2}

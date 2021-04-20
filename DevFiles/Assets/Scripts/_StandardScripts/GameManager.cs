@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                ToggleMouseOnOrOff(false);
+                ToggleMouseOnOrOff(true);
 
                 isGamePaused = false;
                 pausedMenu.SetActive(false);

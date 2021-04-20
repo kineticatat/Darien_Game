@@ -9,10 +9,13 @@ public class Artifact_ScriptableObject : ScriptableObject
     
     [TextArea(15, 20)]
     public string artifactDescription;
+    public string sfxName;
+    public Sprite artifactImage;
     public bool hasBeenDiscovered = false;
 
     public void GatheredArtifact()
     {
+        if (sfxName != "") AudioManager.instance.Play(sfxName);
         hasBeenDiscovered = true;
         MapUI.instance.CheckForAddedLocations();
         Notebook.instance.AddEntry(this);

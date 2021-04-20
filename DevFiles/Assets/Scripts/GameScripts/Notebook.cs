@@ -41,24 +41,6 @@ public class Notebook : MonoBehaviour
         }
     }
 
-    public void TestEntries()
-    {
-        for (int i = 0; i < entriesPerPage*2; i++)
-        {
-            float randomNumber = Random.value;
-
-            if (randomNumber > .5f)
-            {
-                AddEntry(new Artifact_ScriptableObject("Test Artifact","test description"));
-            }
-            else
-            {
-                AddEntry(new Artifact_ScriptableObject("Test Location", "test description"));
-            }
-        }
-        DisplayEntries();
-    }
-
     public void AddEntry(Location location)
     {
         foreach (Entry entry in notebookEntries)
@@ -85,6 +67,19 @@ public class Notebook : MonoBehaviour
         notebookEntries.Add(new Entry(artifact));
     }
 
+    public void AddEntry(Tree_ScriptableObject floraFauna)
+    {
+        foreach (Entry entry in notebookEntries)
+        {
+            if (entry.type == EntryType.artifact && entry.artifact == floraFauna)
+            {
+                return;
+            }
+        }
+
+        notebookEntries.Add(new Entry(floraFauna));
+    }
+
     public void DisplayEntries(int startingEntry = 0)
     {
         currentEntry = startingEntry;
@@ -98,10 +93,15 @@ public class Notebook : MonoBehaviour
                     entryTitles[i - startingEntry].text = notebookEntries[i].artifact.artifactName;
                     entryDescriptions[i - startingEntry].text = notebookEntries[i].artifact.artifactDescription;
                 }
-                else
+                else if (notebookEntries[i].type == EntryType.location)
                 {
                     entryTitles[i - startingEntry].text = notebookEntries[i].location.locationName;
                     entryDescriptions[i - startingEntry].text = notebookEntries[i].location.locationDescription;
+                }
+                else
+                {
+                    entryTitles[i - startingEntry].text = notebookEntries[i].floraFauna.name;
+                    entryDescriptions[i - startingEntry].text = notebookEntries[i].floraFauna.Description;
                 }
             }
             else
@@ -135,6 +135,29 @@ public class Notebook : MonoBehaviour
             }
         }
     }
+
+
+
+    #region debugTEST
+
+    public void TestEntries()
+    {
+        for (int i = 0; i < entriesPerPage * 2; i++)
+        {
+            float randomNumber = Random.value;
+
+            if (randomNumber > .5f)
+            {
+                AddEntry(new Artifact_ScriptableObject("Test Artifact", "test description"));
+            }
+            else
+            {
+                AddEntry(new Artifact_ScriptableObject("Test Location", "test description"));
+            }
+        }
+        DisplayEntries();
+    }
+    #endregion
 }
 
 [System.Serializable]
@@ -143,6 +166,7 @@ public class Entry
     public EntryType type;
     public Artifact_ScriptableObject artifact;
     public Location location;
+    public Tree_ScriptableObject floraFauna;
 
     public Entry(Location location)
     {
@@ -155,6 +179,12 @@ public class Entry
         this.artifact = artifact;
         type = EntryType.artifact;
     }
+
+    public Entry(Tree_ScriptableObject floraFauna)
+    {
+        this.floraFauna = floraFauna;
+        type = EntryType.floraFauna;
+    }
 }
 
-public enum EntryType{artifact,location}
+public enum EntryType{artifact,location,floraFauna}

@@ -21,9 +21,12 @@ public class InspectionMenuUI : MonoBehaviour
 	public GameObject meshObject;
 
 	public GameObject menuParent;
+	public Image image;
 
 	public void InspectClue(Clue clue)
 	{
+		AudioManager.instance.Play("collect");
+
 		Artifact_ScriptableObject clueData = clue.data;
 		title.text = clueData.artifactName;
 		description.text = clueData.artifactDescription;
@@ -38,5 +41,22 @@ public class InspectionMenuUI : MonoBehaviour
 
 		meshRenderer.material = clueMeshRenderer.material;
 		meshFilter.mesh = clueMeshFilter.mesh;
+		image.sprite = clueData.artifactImage;
+	}
+
+	public void InspectClue(Tree_ScriptableObject floraFauna)
+	{
+		AudioManager.instance.Play("collect");
+
+		title.text = floraFauna.name;
+		description.text = floraFauna.Description;
+
+		image.sprite = floraFauna.imageAsset;
+	}
+
+	public void OnClose()
+	{
+		AudioManager.instance.Play("scribble");
+		FirstPersonController.instance.canMove = true;
 	}
 }

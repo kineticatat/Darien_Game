@@ -44,11 +44,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: sampleAudio
-    sound: {fileID: 8300000, guid: 74da3cd01e0bcce4f91e68498a7be0b9, type: 3}
+  - name: music_bright
+    type: 1
+    sound: {fileID: 8300000, guid: fe0196d866efb464aa5ff72bb67ba258, type: 3}
     volume: 1
     pitch: 1
     loop: 1
-    audioMixerGroup: {fileID: -6879506641586460695, guid: c0beb618e79f6b549b42022694b9f908, type: 2}
+    audioMixerGroup: {fileID: -5216114658410532756, guid: c0beb618e79f6b549b42022694b9f908,
+      type: 2}
+    source: {fileID: 0}
+  - name: rainforest
+    type: 1
+    sound: {fileID: 8300000, guid: e5ab654bac41a1c44a2c07ab6ed00de0, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    audioMixerGroup: {fileID: -6879506641586460695, guid: c0beb618e79f6b549b42022694b9f908,
+      type: 2}
+    source: {fileID: 0}
+  - name: collect
+    type: 1
+    sound: {fileID: 8300000, guid: 82dfe358cbdaa2a4a972ee4540402c71, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 1797622656990159263, guid: c0beb618e79f6b549b42022694b9f908,
+      type: 2}
+    source: {fileID: 0}
+  - name: scribble
+    type: 1
+    sound: {fileID: 8300000, guid: 0c4b26b18c269894b920200d7b2c655c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 1797622656990159263, guid: c0beb618e79f6b549b42022694b9f908,
+      type: 2}
+    source: {fileID: 0}
+  - name: map_open
+    type: 1
+    sound: {fileID: 8300000, guid: d532b6aa09558ba4d8a8a07e32ed77bb, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 1797622656990159263, guid: c0beb618e79f6b549b42022694b9f908,
+      type: 2}
+    source: {fileID: 0}
+  - name: map_close
+    type: 1
+    sound: {fileID: 8300000, guid: 99caec41c52a8884f8a6be889d3551da, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 1797622656990159263, guid: c0beb618e79f6b549b42022694b9f908,
+      type: 2}
     source: {fileID: 0}
   sources: []
