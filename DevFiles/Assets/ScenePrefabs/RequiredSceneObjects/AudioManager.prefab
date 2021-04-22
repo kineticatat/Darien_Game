@@ -53,9 +53,36 @@ MonoBehaviour:
     audioMixerGroup: {fileID: -5216114658410532756, guid: c0beb618e79f6b549b42022694b9f908,
       type: 2}
     source: {fileID: 0}
+  - name: music_wary
+    type: 1
+    sound: {fileID: 8300000, guid: 279d20d1b8f1a4f428e79a8203faa4c4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    audioMixerGroup: {fileID: -5216114658410532756, guid: c0beb618e79f6b549b42022694b9f908,
+      type: 2}
+    source: {fileID: 0}
   - name: rainforest
     type: 1
     sound: {fileID: 8300000, guid: e5ab654bac41a1c44a2c07ab6ed00de0, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    audioMixerGroup: {fileID: -6879506641586460695, guid: c0beb618e79f6b549b42022694b9f908,
+      type: 2}
+    source: {fileID: 0}
+  - name: rainforest2
+    type: 2
+    sound: {fileID: 8300000, guid: e4a440f48f99a4b44a4c21c85b64b087, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    audioMixerGroup: {fileID: -6879506641586460695, guid: c0beb618e79f6b549b42022694b9f908,
+      type: 2}
+    source: {fileID: 0}
+  - name: rain
+    type: 2
+    sound: {fileID: 8300000, guid: 6186c17f6ee9acf40b8fb92ad302819b, type: 3}
     volume: 1
     pitch: 1
     loop: 1
@@ -83,15 +110,6 @@ MonoBehaviour:
   - name: map_open
     type: 1
     sound: {fileID: 8300000, guid: d532b6aa09558ba4d8a8a07e32ed77bb, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    audioMixerGroup: {fileID: 1797622656990159263, guid: c0beb618e79f6b549b42022694b9f908,
-      type: 2}
-    source: {fileID: 0}
-  - name: map_close
-    type: 1
-    sound: {fileID: 8300000, guid: 99caec41c52a8884f8a6be889d3551da, type: 3}
     volume: 1
     pitch: 1
     loop: 0

@@ -22,7 +22,7 @@ public class CommunityEventManager : MonoBehaviour
     void Start()
     {
         dialogues = new Queue<DialogueLine>();
-        TriggerDialogue(startingEvent);
+        if(startingEvent != null) TriggerDialogue(startingEvent);
     }
 
     public void TriggerDialogue(CommunityEvent_ScriptableObject communityEvent)
