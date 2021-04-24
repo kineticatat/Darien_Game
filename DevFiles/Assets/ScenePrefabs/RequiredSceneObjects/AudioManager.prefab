@@ -116,4 +116,22 @@ MonoBehaviour:
     audioMixerGroup: {fileID: 1797622656990159263, guid: c0beb618e79f6b549b42022694b9f908,
       type: 2}
     source: {fileID: 0}
+  - name: walking
+    type: 0
+    sound: {fileID: 8300000, guid: 8ba7781d13aef1449bb0c199a61e0e90, type: 3}
+    volume: 1
+    pitch: 1.2
+    loop: 1
+    audioMixerGroup: {fileID: 1797622656990159263, guid: c0beb618e79f6b549b42022694b9f908,
+      type: 2}
+    source: {fileID: 0}
+  - name: oophagaPumilioFrog
+    type: 0
+    sound: {fileID: 8300000, guid: 911879b31f6f7354ba0116c332c83cb8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 1797622656990159263, guid: c0beb618e79f6b549b42022694b9f908,
+      type: 2}
+    source: {fileID: 0}
   sources: []

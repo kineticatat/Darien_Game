@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!135 &8952010652439475679
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8745290782762642220}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.98
+  m_Center: {x: -0.45, y: -0.12, z: -0.2}
 --- !u!1 &6431571553117418748
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,7 +69,6 @@ GameObject:
   - component: {fileID: 8367621224823562806}
   - component: {fileID: 8393307733274918628}
   - component: {fileID: 8384452984422906320}
-  - component: {fileID: 8424634147630149922}
   m_Layer: 0
   m_Name: Jungle_Boulder_B
   m_TagString: Untagged
@@ -128,20 +140,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8424634147630149922
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8361822530703611938}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 0ce457a3bdac4644e87328f3930ed0e5, type: 3}
 --- !u!1 &8361919906832004640
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,7 +333,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3218116688725959068, guid: 61dac6969ecd49f4d9fa560c8bee57ac, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 61dac6969ecd49f4d9fa560c8bee57ac, type: 3}
 --- !u!4 &4716794847005592108 stripped
 Transform:
@@ -352,6 +351,12 @@ MeshRenderer:
 --- !u!23 &4694459789743180319 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 1455425205948926387, guid: 61dac6969ecd49f4d9fa560c8bee57ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 6130709491907494828}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8745290782762642220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3191121861175126144, guid: 61dac6969ecd49f4d9fa560c8bee57ac,
     type: 3}
   m_PrefabInstance: {fileID: 6130709491907494828}
   m_PrefabAsset: {fileID: 0}

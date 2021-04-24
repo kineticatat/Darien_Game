@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 4347982686092487}
   - component: {fileID: 33566782095416931}
   - component: {fileID: 23045710807721889}
-  - component: {fileID: 64193049310996309}
   m_Layer: 0
   m_Name: Jungle_Rock_Pointy_B
   m_TagString: Untagged
@@ -114,20 +113,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64193049310996309
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1951905138256415}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 8f0f78e0dfda19d498c9ba9758a47448, type: 3}
 --- !u!1 &5728519872911478381
 GameObject:
   m_ObjectHideFlags: 0

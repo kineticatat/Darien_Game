@@ -24,6 +24,8 @@ public class FirstPersonController : MonoBehaviour
     public Interactable currentInteractable;
 
     public bool canMove;
+    public bool isMoving;
+    public string walkingSFX;
 
     private void Start()
     {
@@ -42,6 +44,17 @@ public class FirstPersonController : MonoBehaviour
             if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
             {
                 MoveCharacter();
+                if (walkingSFX != "" && !isMoving)
+                {
+                    AudioManager.instance.Play(walkingSFX);
+                    isMoving = true;
+                }
+            }
+
+            if (isMoving && Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
+            {
+                isMoving = false;
+                AudioManager.instance.Stop(walkingSFX);
             }
 
             if (Input.GetAxis("Mouse X") != 0 || Input.GetAxis("Mouse Y") != 0)
