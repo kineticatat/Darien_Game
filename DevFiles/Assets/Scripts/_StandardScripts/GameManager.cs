@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
                 Time.timeScale = 0;
                 if (AudioManager.instance != null)
                 {
-                    
+
                 }
             }
             else

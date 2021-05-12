@@ -41,3 +41,5 @@ MonoBehaviour:
   eventName: 
   nextDialogue: {fileID: 0}
   locationToTravelTo: 
+  doesStopOtherAudio: 0
+  ambientAudioToPlay: []

@@ -23,7 +23,7 @@ public class TitleMenuManager : MonoBehaviour
         } 
         else if (keyboard.anyKey.wasPressedThisFrame)
         {
-            GameManager.instance.GoToSceneName("MainMenu");
+            GameManager.instance.GoToSceneName("ConceptTest");
         }
     }
 }
