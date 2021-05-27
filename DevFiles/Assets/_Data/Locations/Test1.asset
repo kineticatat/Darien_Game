@@ -20,5 +20,5 @@ MonoBehaviour:
     be able to point me in the direction of another site?
   locationSprite: {fileID: 21300000, guid: c78cc947d44fb07429eb25edf0b95e23, type: 3}
   locationSceneName: ConceptTest
-  hasDiscovered: 0
+  hasDiscovered: 1
   requiredDiscoveries: []

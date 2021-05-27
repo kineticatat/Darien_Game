@@ -91,7 +91,7 @@ public class MapUI : MonoBehaviour
     }
 }
 
-[CreateAssetMenu(fileName = "Location", menuName = "Narrative/New Location")]
+/*[CreateAssetMenu(fileName = "Location", menuName = "Narrative/New Location")]
 public class Location : ScriptableObject
 {
     public Vector2 position;
@@ -125,4 +125,4 @@ public class Location : ScriptableObject
             MapUI.instance.AddLocationIcon(this);
         }
     }
-}
+}*/
