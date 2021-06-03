@@ -1056,7 +1056,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh296274
+  m_Name: pb_Mesh22622
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2436,7 +2436,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh296498
+  m_Name: pb_Mesh22846
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8854,6 +8854,11 @@ PrefabInstance:
       propertyPath: interactionDistance
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4088167370925723052, guid: 3fcb28ebcf85f1e4e959d563262f7ded,
+        type: 3}
+      propertyPath: mainCam
+      value: 
+      objectReference: {fileID: 1436829581}
     - target: {fileID: 9055726812659368474, guid: 3fcb28ebcf85f1e4e959d563262f7ded,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14623,6 +14628,12 @@ Transform:
   m_Father: {fileID: 404194600}
   m_RootOrder: 129
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1436829581 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4088167371362155392, guid: 3fcb28ebcf85f1e4e959d563262f7ded,
+    type: 3}
+  m_PrefabInstance: {fileID: 882129921}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1445944706
 GameObject:
   m_ObjectHideFlags: 0
@@ -17669,7 +17680,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh297354
+  m_Name: pb_Mesh23702
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20732,7 +20743,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh296056
+  m_Name: pb_Mesh22404
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
