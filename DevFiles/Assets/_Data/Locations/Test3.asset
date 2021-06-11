@@ -17,7 +17,7 @@ MonoBehaviour:
   locationDescription: This item could have been placed here by the flooding of a
     local river, perhaps paying a trip up stream could lead some results.
   locationSprite: {fileID: 21300000, guid: ad69a0597e9b00542a17ceafe615e09f, type: 3}
-  locationSceneName: ConceptTest
-  hasDiscovered: 0
+  locationSceneName: Punta-Patino 2.0_Rainy
+  hasDiscovered: 1
   requiredDiscoveries:
   - {fileID: 11400000, guid: f76ec5d1400e8f3448ff6faf2c76d277, type: 2}

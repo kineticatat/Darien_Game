@@ -19,7 +19,7 @@ MonoBehaviour:
     I wonder if one of the community members could help me in finding the spot that
     this artifact was moved their from?
   locationSprite: {fileID: 21300000, guid: 2339da2dc2056104a977b0340a033e35, type: 3}
-  locationSceneName: Rio-Santa-Barbara_Site
-  hasDiscovered: 0
+  locationSceneName: Punta-Patino 2.0_sunny
+  hasDiscovered: 1
   requiredDiscoveries:
   - {fileID: 11400000, guid: f76ec5d1400e8f3448ff6faf2c76d277, type: 2}
