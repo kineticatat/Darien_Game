@@ -1,0 +1,10 @@
+Tropical Wood
+
+------------------------------------------------------------------------------------------------------
+
+To install HDRP/URP shaders, override with HDRP/URP Tropical Wood.unitypackage
+
+Wind job with wind prefabs in each render, look example in demo-scenes. Look at launched "Game" tab.
+Use reflection probes for best results with shine-smooth.
+
+Contact: greenbuggames@gmail.com
