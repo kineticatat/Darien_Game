@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public bool isGamePaused;
     public bool isMouseFreeOnStart = true;
     private Keyboard keyboard;
+    
 
     private void Start()
     {
@@ -100,6 +101,8 @@ public class GameManager : MonoBehaviour
 
         SceneManager.LoadSceneAsync(SceneName);
     }
+
+  
 
     public void SendErrorMessage(string newErrorMessage)
     {

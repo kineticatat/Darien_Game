@@ -16,7 +16,7 @@ public class FirstPersonController : MonoBehaviour
 
     #endregion
 
-    Camera mainCam;
+   [SerializeField] private GameObject mainCam;
     public Vector2 xyRotationSpeed;
     public float speed;
 
@@ -27,9 +27,12 @@ public class FirstPersonController : MonoBehaviour
     public bool isMoving;
     public string walkingSFX;
 
+    private float yRotation;
+    private float xRotation;
+
     private void Start()
     {
-        mainCam = Camera.main;
+        //mainCam = Camera.main;
     }
 
     private void FixedUpdate()
@@ -39,6 +42,8 @@ public class FirstPersonController : MonoBehaviour
 
     private void Update()
     {
+
+
         if (canMove)
         {
             if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
@@ -57,10 +62,10 @@ public class FirstPersonController : MonoBehaviour
                 AudioManager.instance.Stop(walkingSFX);
             }
 
-            if (Input.GetAxis("Mouse X") != 0 || Input.GetAxis("Mouse Y") != 0)
-            {
+            //if (Input.GetAxis("Mouse X") != 0 || Input.GetAxis("Mouse Y") != 0)
+           // {
                 RotateCharacter();
-            }
+           // }
 
             if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null)
             {
@@ -140,15 +145,14 @@ public class FirstPersonController : MonoBehaviour
 
     public void RotateCharacter()
     {
-        float yRotation = Input.GetAxis("Mouse X") * xyRotationSpeed.y * Time.deltaTime;
-        float xRotation = Input.GetAxis("Mouse Y") * xyRotationSpeed.x * Time.deltaTime;
+         yRotation += Input.GetAxis("Mouse X") * xyRotationSpeed.y * Time.deltaTime;
+         xRotation += Input.GetAxis("Mouse Y") * xyRotationSpeed.x * Time.deltaTime;
 
-        transform.Rotate(new Vector3(0, yRotation, 0));
+        xRotation = Mathf.Clamp(xRotation, -80f, 80f);
 
-        if (true)//test to make sure rotation is properly clamped
-        {
-            mainCam.transform.Rotate(xRotation, 0, 0);
-        }
+        transform.rotation = Quaternion.Euler(0, yRotation, 0);
+        mainCam.transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+
     }
 
     public void MoveCharacter()
