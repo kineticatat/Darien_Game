@@ -32,6 +32,8 @@ public class MapUI : MonoBehaviour
     public Text selectedLocationDescription;
     public GameObject selectedLocationMenu;
 
+    public GameObject playerProfile;
+
     private void InitializeAllLocations()
     {
         // creates icons for all locations in the map if the area has been discovered.
@@ -81,6 +83,7 @@ public class MapUI : MonoBehaviour
     public void GoToSelectedLocation()
     {
         Notebook.instance.AddEntry(selectedLocation);
+        playerProfile.GetComponent<PlayerProfile>().SaveGame();
         GameManager.instance.GoToSceneName(selectedLocation.locationSceneName);
     }
 

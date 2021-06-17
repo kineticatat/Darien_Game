@@ -32,6 +32,13 @@ public class PlayerProfile : MonoBehaviour
     public List<Artifact_ScriptableObject> allArtifacts = new List<Artifact_ScriptableObject>();
     public List<Artifact_ScriptableObject> gatheredArtifacts = new List<Artifact_ScriptableObject>();
 
+    public List<Entry> allEntries = new List<Entry>();
+
+    public void Start()
+    {
+        LoadGame();
+    }
+
     public void SaveGame()
     {
         SaveSystem.SavePlayer(this);
@@ -44,5 +51,7 @@ public class PlayerProfile : MonoBehaviour
         // BE SURE TO ADD ALL OF THE SAVE DATA HERE
         achievementScore = player.achievementScore;
         achievementProgress = player.achievementProgress;
+
+
     }
 }
