@@ -30,6 +30,7 @@ public class FirstPersonController : MonoBehaviour
     private float yRotation;
     private float xRotation;
 
+
     private void Start()
     {
         //mainCam = Camera.main;

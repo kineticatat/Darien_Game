@@ -21,6 +21,7 @@ public class GameplaySceneData : MonoBehaviour
 
     private void Start()
     {
+
         AudioManager.instance.StopAllAudio();
         foreach (string song in playSoundsOnStart)
         {
