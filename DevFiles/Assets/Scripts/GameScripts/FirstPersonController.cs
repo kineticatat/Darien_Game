@@ -149,7 +149,7 @@ public class FirstPersonController : MonoBehaviour
          yRotation += Input.GetAxis("Mouse X") * xyRotationSpeed.y * Time.deltaTime;
          xRotation += Input.GetAxis("Mouse Y") * xyRotationSpeed.x * Time.deltaTime;
 
-        xRotation = Mathf.Clamp(xRotation, -80f, 80f);
+        xRotation = Mathf.Clamp(xRotation, -45f, 45f);
 
         transform.rotation = Quaternion.Euler(0, yRotation, 0);
         mainCam.transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
