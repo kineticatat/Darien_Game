@@ -18962,6 +18962,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.321
       objectReference: {fileID: 0}
+    - target: {fileID: 1023715124278159050, guid: 1dd7168e2ec20ad45870e3f3183a6d3f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -7.918152
+      objectReference: {fileID: 0}
     - target: {fileID: 1935380591123978184, guid: 1dd7168e2ec20ad45870e3f3183a6d3f,
         type: 3}
       propertyPath: playSoundsOnStart.Array.size
@@ -18981,6 +18986,11 @@ PrefabInstance:
         type: 3}
       propertyPath: playSoundsOnStart.Array.data[1]
       value: rainforest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582344335472491264, guid: 1dd7168e2ec20ad45870e3f3183a6d3f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -7.8999634
       objectReference: {fileID: 0}
     - target: {fileID: 5477893747916686355, guid: 1dd7168e2ec20ad45870e3f3183a6d3f,
         type: 3}
@@ -27742,6 +27752,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6888078551301914067, guid: c44ad08a99e497343afa92806809499b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.1499634
+      objectReference: {fileID: 0}
     - target: {fileID: 6888078551578107668, guid: c44ad08a99e497343afa92806809499b,
         type: 3}
       propertyPath: m_IsActive
@@ -27962,6 +27977,19 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -110.30002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380443998853092923, guid: c44ad08a99e497343afa92806809499b,
+        type: 3}
+      propertyPath: m_Text
+      value: Welcome to Panama, where you will explore both the Darien of the past,
+        and the Darien of the present. You are presently assisting ecological anthropologist
+        Lucy Gill, as she builds relationships and documents local flora and fauna,
+        while following past descriptions to archaeological findings in the Darien.
+        Sigvald Linne was a swedish archaeologist who traveled through South and
+        Central America in 1929, documenting existing life and searching for historical
+        artifacts. You are beginning in Punta Patino, and will start by re-reading
+        Linne's text again, and following environmental landmarks to search for Linne's
+        findings. Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 9152006416251652131, guid: c44ad08a99e497343afa92806809499b,
         type: 3}

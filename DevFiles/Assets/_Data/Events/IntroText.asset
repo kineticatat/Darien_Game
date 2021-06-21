@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6929e6cdc204f3d41a6c7355e40a6490, type: 3}
-  m_Name: KTestt
+  m_Name: IntroText
   m_EditorClassIdentifier: 
   dialogueLines: []
   backgroundImage: {fileID: 0}
-  eventName: 
-  nextDialogue: {fileID: 0}
+  eventName: Intro Text
+  nextDialogue: {fileID: 11400000, guid: 5082980ded18d45e4a51e9b2209b5f12, type: 2}
   locationToTravelTo: 
   doesStopOtherAudio: 0
   ambientAudioToPlay: []
