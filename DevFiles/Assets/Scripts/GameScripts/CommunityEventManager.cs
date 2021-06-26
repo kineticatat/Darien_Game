@@ -27,6 +27,7 @@ public class CommunityEventManager : MonoBehaviour
 
     public void TriggerDialogue(CommunityEvent_ScriptableObject communityEvent)
     {
+        communityEventUI.SetActive(true);
 
         if (communityEvent.doesStopOtherAudio)
         {

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FlythroughCam
   - discoverable
+  - intro
   layers:
   - Default
   - TransparentFX

@@ -165,4 +165,6 @@ public class FirstPersonController : MonoBehaviour
         transform.Translate(movementDirection);
     }
 
+    
+
 }

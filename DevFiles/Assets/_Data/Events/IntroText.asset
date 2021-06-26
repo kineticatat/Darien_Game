@@ -12,10 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6929e6cdc204f3d41a6c7355e40a6490, type: 3}
   m_Name: IntroText
   m_EditorClassIdentifier: 
-  dialogueLines: []
+  dialogueLines:
+  - speakerName: Intro
+    sentences:
+    - Welcome to Panama, where you will explore both the Darien of the past, and
+      the Darien of the present.
+    - Sigvald Linne was a swedish archaeologist who traveled through South and Central
+      America in 1929, documenting existing life and searching for historical artifacts.
+    - You are presently assisting ecological anthropologist Lucy Gill, as she builds
+      relationships and documents local flora and fauna, while following past descriptions
+      to archaeological findings in the Darienacts.
+    - You are beginning in Punta Patino, and will start by re-reading Linne's text
+      again, and following environmental landmarks to search for Linne's findings.
+      Good luck!
   backgroundImage: {fileID: 0}
   eventName: Intro Text
-  nextDialogue: {fileID: 11400000, guid: 5082980ded18d45e4a51e9b2209b5f12, type: 2}
+  nextDialogue: {fileID: 0}
   locationToTravelTo: 
   doesStopOtherAudio: 0
   ambientAudioToPlay: []
