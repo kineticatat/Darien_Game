@@ -123,7 +123,7 @@ public class FirstPersonController : MonoBehaviour
         {
             Interactable interactableItem = hit.transform.GetComponent<Interactable>();
 
-            if (interactableItem != null)
+            if (interactableItem.tag == "discoverable")
             {
                 
                 currentInteractable = interactableItem;
@@ -131,7 +131,7 @@ public class FirstPersonController : MonoBehaviour
             }
             else
             {
-                if (currentInteractable != null) currentInteractable.DisplayInteractionText(false);
+                currentInteractable.DisplayInteractionText(false);
 
                 currentInteractable = null;
             }
