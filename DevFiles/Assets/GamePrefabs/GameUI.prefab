@@ -2633,7 +2633,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6888078551578107669
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4542,6 +4542,12 @@ MonoBehaviour:
   meshObject: {fileID: 6888078551279359601}
   menuParent: {fileID: 6888078551015450831}
   image: {fileID: 3654302194308702037}
+  foundItems: 0
+  totalItems: 0
+  foundEverything: 0
+  YouHaveFoundEverything: {fileID: 11400000, guid: d17f5bab4604c16468a9a9ada83e6cb3,
+    type: 2}
+  gameUI: {fileID: 6888078552652814284}
 --- !u!114 &6888078552652814282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4567,6 +4573,7 @@ MonoBehaviour:
   selectedLocationTitle: {fileID: 6888078550839580444}
   selectedLocationDescription: {fileID: 6888078551266408937}
   selectedLocationMenu: {fileID: 6888078552625750740}
+  playerProfile: {fileID: 0}
 --- !u!114 &6888078552652814283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4786,7 +4793,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6888078552802493734
 RectTransform:
   m_ObjectHideFlags: 0

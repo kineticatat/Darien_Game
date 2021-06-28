@@ -23,6 +23,12 @@ public class InspectionMenuUI : MonoBehaviour
 	public GameObject menuParent;
 	public Image image;
 
+	public int foundItems = 0;
+	public int totalItems;
+	public bool foundEverything = false;
+	public CommunityEvent_ScriptableObject YouHaveFoundEverything;
+	public GameObject gameUI;
+
 	public void InspectClue(Clue clue)
 	{
 		AudioManager.instance.Play("collect");
@@ -56,7 +62,26 @@ public class InspectionMenuUI : MonoBehaviour
 
 	public void OnClose()
 	{
-		AudioManager.instance.Play("scribble");
-		FirstPersonController.instance.canMove = true;
+		if (foundEverything)
+		{
+			gameUI.GetComponent<CommunityEventManager>().TriggerDialogue(YouHaveFoundEverything);
+		}
+        else
+        {
+			AudioManager.instance.Play("scribble");
+			FirstPersonController.instance.canMove = true;
+		}
 	}
+
+	public void FoundAnItem()
+    {
+		foundItems += 1;
+
+		if (foundItems >= totalItems)
+        {
+			foundEverything = true;
+        }			
+    }
+
+	
 }

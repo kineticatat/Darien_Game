@@ -21,10 +21,11 @@ MonoBehaviour:
       America in 1929, documenting existing life and searching for historical artifacts.
     - You are presently assisting ecological anthropologist Lucy Gill, as she builds
       relationships and documents local flora and fauna, while following past descriptions
-      to archaeological findings in the Darienacts.
-    - You are beginning in Punta Patino, and will start by re-reading Linne's text
-      again, and following environmental landmarks to search for Linne's findings.
-      Good luck!
+      to archaeological findings in the Darien.
+    - 'You are beginning in Punta Patino, and will start by re-reading Linne''s text
+      again, and following environmental landmarks to search for Linne''s findings. '
+    - To play use WASD to move and look around with mouse. when you come across an
+      artifact interact with it with E. Good luck!
   backgroundImage: {fileID: 0}
   eventName: Intro Text
   nextDialogue: {fileID: 0}

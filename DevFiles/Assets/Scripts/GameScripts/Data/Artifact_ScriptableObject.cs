@@ -20,6 +20,7 @@ public class Artifact_ScriptableObject : ScriptableObject
         MapUI.instance.CheckForAddedLocations();
         Notebook.instance.AddEntry(this);
         if (!PlayerProfile.instance.gatheredArtifacts.Contains(this)) PlayerProfile.instance.gatheredArtifacts.Add(this);
+
     }
 
     public Artifact_ScriptableObject(string artifactName, string artifactDescription)

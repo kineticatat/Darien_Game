@@ -13,6 +13,10 @@ public class Clue : Interactable
         InspectionMenuUI.instance.menuParent.SetActive(true);
         InspectionMenuUI.instance.InspectClue(this);
 
-        data.GatheredArtifact();
+        if (!data.hasBeenDiscovered)
+        {
+            data.GatheredArtifact();
+            InspectionMenuUI.instance.FoundAnItem();
+        }
     }
 }

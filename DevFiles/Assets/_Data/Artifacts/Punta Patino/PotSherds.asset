@@ -21,4 +21,4 @@ MonoBehaviour:
     \r\n"
   sfxName: oophagaPumilioFrog
   artifactImage: {fileID: 21300000, guid: 818b5d52bdb3c244385f79abdc13cdee, type: 3}
-  hasBeenDiscovered: 1
+  hasBeenDiscovered: 0
