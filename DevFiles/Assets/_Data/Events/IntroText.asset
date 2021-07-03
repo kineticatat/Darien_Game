@@ -24,9 +24,13 @@ MonoBehaviour:
       to archaeological findings in the Darien.
     - 'You are beginning in Punta Patino, and will start by re-reading Linne''s text
       again, and following environmental landmarks to search for Linne''s findings. '
-    - To play use WASD to move and look around with mouse. when you come across an
-      artifact interact with it with E. Good luck!
-  backgroundImage: {fileID: 0}
+    - 'To play use WASD to move and look around with mouse. when you come across
+      an artifact interact with it with E.
+
+      Press N!
+
+      Good luck!'
+  backgroundImage: {fileID: 21300000, guid: 39db01d5aff49a342b1402bca42cf06b, type: 3}
   eventName: Intro Text
   nextDialogue: {fileID: 0}
   locationToTravelTo: 

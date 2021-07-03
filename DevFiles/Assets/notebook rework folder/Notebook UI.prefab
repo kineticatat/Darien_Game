@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2043040722525882666
 RectTransform:
   m_ObjectHideFlags: 0
@@ -54,7 +54,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4593519563370381190
 RectTransform:
   m_ObjectHideFlags: 0
@@ -267,7 +267,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -908.6, y: 314.76}
+  m_AnchoredPosition: {x: -923.1, y: 319.9}
   m_SizeDelta: {x: 98.614044, y: 68.44736}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &8957919590463748415
@@ -298,7 +298,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300002, guid: 7f83de9ce1b2e9a4882fa64589108f14, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -350,7 +350,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2558274359145820129}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3070047924519212488}
+        m_TargetAssemblyTypeName: NotebookButtons, Assembly-CSharp
+        m_MethodName: ToIntroFindablePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4080935499260264682
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,7 +398,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -908.95, y: 394.51}
+  m_AnchoredPosition: {x: -925.4, y: 401.7}
   m_SizeDelta: {x: 94.18404, y: 69.447876}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &5772266842704333605
@@ -417,7 +429,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300002, guid: 7f83de9ce1b2e9a4882fa64589108f14, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -469,7 +481,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5003928325804437012}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3070047924519212488}
+        m_TargetAssemblyTypeName: NotebookButtons, Assembly-CSharp
+        m_MethodName: ToCurrentLocationPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6050589391492828740
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,6 +927,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6050589391922642339}
+  - component: {fileID: 3070047924519212488}
   m_Layer: 5
   m_Name: Notebook UI
   m_TagString: Untagged
@@ -932,6 +957,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1, y: 0}
+--- !u!114 &3070047924519212488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6050589391922642338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baca288e3b07958458635b7cbd4f89dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLocation: {fileID: 296670214215171115}
+  introFindables: {fileID: 8463809041430668972}
+  artifactsPage: {fileID: 7997971447927319800}
+  FaunaPage: {fileID: 1784604785295020836}
+  floraPages: {fileID: 6646700880167652798}
 --- !u!1 &6050589392902368535
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,7 +1456,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7155412539663849348
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3168,6 +3210,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2043040722525882666}
     m_Modifications:
+    - target: {fileID: 98056942556850428, guid: 162c087c803c02d45b36cdf0a164b968,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -90.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 98056942556850428, guid: 162c087c803c02d45b36cdf0a164b968,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2.115807
+      objectReference: {fileID: 0}
+    - target: {fileID: 98056942556850428, guid: 162c087c803c02d45b36cdf0a164b968,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 2.2729492
+      objectReference: {fileID: 0}
+    - target: {fileID: 98056942556850428, guid: 162c087c803c02d45b36cdf0a164b968,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -8.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 98056942556850428, guid: 162c087c803c02d45b36cdf0a164b968,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 96.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 98056942556850428, guid: 162c087c803c02d45b36cdf0a164b968,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 96.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 98056942556850428, guid: 162c087c803c02d45b36cdf0a164b968,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2872
+      objectReference: {fileID: 0}
     - target: {fileID: 6755843229300289663, guid: 162c087c803c02d45b36cdf0a164b968,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3563,10 +3640,80 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 90.887924
       objectReference: {fileID: 0}
+    - target: {fileID: 2765075458317981838, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2765075458317981838, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2765075458317981838, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3277800655116646251, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3277800655116646251, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3277800655116646251, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549865047630808674, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549865047630808674, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549865047630808674, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549865047630808674, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3070047924519212488}
+    - target: {fileID: 3549865047630808674, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: NotebookButtons, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549865047630808674, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToFaunaPage
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549865047630808674, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5095465992717642053, guid: 21c208d90baaaa44095dccae6ed0da0e,
         type: 3}
       propertyPath: m_Name
       value: introFindingsPage2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5095465992717642053, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5095465992717642054, guid: 21c208d90baaaa44095dccae6ed0da0e,
         type: 3}
@@ -3678,6 +3825,21 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5193587388400929469, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5193587388400929469, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5193587388400929469, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5466603650292287744, guid: 21c208d90baaaa44095dccae6ed0da0e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3697,6 +3859,76 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 96.08641
+      objectReference: {fileID: 0}
+    - target: {fileID: 5862591253430348930, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5862591253430348930, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5862591253430348930, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5862591253430348930, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3070047924519212488}
+    - target: {fileID: 5862591253430348930, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: NotebookButtons, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5862591253430348930, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToArtifactsPage
+      objectReference: {fileID: 0}
+    - target: {fileID: 5862591253430348930, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5981749964265038267, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5981749964265038267, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5981749964265038267, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5981749964265038267, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3070047924519212488}
+    - target: {fileID: 5981749964265038267, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: NotebookButtons, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5981749964265038267, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToFloraPage
+      objectReference: {fileID: 0}
+    - target: {fileID: 5981749964265038267, guid: 21c208d90baaaa44095dccae6ed0da0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21c208d90baaaa44095dccae6ed0da0e, type: 3}
