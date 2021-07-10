@@ -104,7 +104,7 @@ public class FirstPersonController : MonoBehaviour
             {
                 AudioManager.instance.Play("map_open");
                 Notebook.instance.notebookUI.SetActive(true);
-                Notebook.instance.DisplayEntries(Notebook.instance.currentEntry);
+                Notebook.instance.UpdateNotebook();
                 ToggleMovement(false);
             }
         } 

@@ -16,3 +16,4 @@ MonoBehaviour:
   Description: They make delicious syrup, a favorite of your average canadian.
   imageAsset: {fileID: 0}
   sfxName: 
+  isFlora: 1

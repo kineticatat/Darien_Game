@@ -19,6 +19,9 @@ public class Notebook : MonoBehaviour
     public GameObject notebookUI;
 
     public int currentEntry;
+    public int currentEntryArtifact;
+    public int currentEntryFlora;
+    public int currentEntryFauna;
     public int entriesPerPage = 1;
 
     public List<Entry> notebookEntriesArtifacts = new List<Entry>();
@@ -27,7 +30,13 @@ public class Notebook : MonoBehaviour
     public List<Entry> notebookEntries = new List<Entry>();
 
     public Text[] entryTitles;
+    public Text[] entryTitlesArtifacts;
+    public Text[] entryTitlesFlora;
+    public Text[] entryTitlesFauna;
     public Text[] entryDescriptions;
+    public Text[] entryDescriptionsArtifacts;
+    public Text[] entryDescriptionsFlora;
+    public Text[] entryDescriptionsFauna;
 
     public List<Location> startingLocations = new List<Location>();
 
@@ -127,6 +136,78 @@ public class Notebook : MonoBehaviour
             {
                 entryTitles[i - startingEntry].text = "";
                 entryDescriptions[i - startingEntry].text = "";
+            }
+        }
+
+    }  
+
+    public void UpdateNotebook()
+    {
+        DisplayEntriesArtifact(instance.currentEntry);
+        DisplayEntriesFauna(instance.currentEntry);
+        DisplayEntriesFlora(instance.currentEntry);
+    }
+
+    public void DisplayEntriesArtifact(int startingEntry = 0)
+    {
+        currentEntryArtifact = startingEntry;
+
+        for (int i = startingEntry; i < startingEntry + entriesPerPage*2; i++)
+        {
+            if (i < notebookEntriesArtifacts.Count)
+            {
+                //if (notebookEntriesArtifacts[i].type == EntryType.artifact)
+                //{
+                    entryTitlesArtifacts[i - startingEntry].text = notebookEntriesArtifacts[i].artifact.artifactName;
+                    entryDescriptionsArtifacts[i - startingEntry].text = notebookEntriesArtifacts[i].artifact.artifactDescription;
+                //}
+            }
+            else
+            {
+                entryTitlesArtifacts[i - startingEntry].text = "";
+                entryDescriptionsArtifacts[i - startingEntry].text = "";
+            }
+        }
+
+    }
+
+    public void DisplayEntriesFlora(int startingEntry = 0)
+    {
+        currentEntryFlora = startingEntry;
+
+        for (int i = startingEntry; i < startingEntry + entriesPerPage * 2; i++)
+        {
+            if (i < notebookEntriesFlora.Count)
+            {
+                entryTitlesFlora[i - startingEntry].text = notebookEntriesFlora[i].floraFauna.name;
+                entryDescriptionsFlora[i - startingEntry].text = notebookEntriesFlora[i].floraFauna.Description;
+            }
+            else
+            {
+                entryTitlesFlora[i - startingEntry].text = "";
+                entryDescriptionsFlora[i - startingEntry].text = "";
+            }
+        }
+
+    }
+
+    public void DisplayEntriesFauna(int startingEntry = 0)
+    {
+        currentEntryFauna = startingEntry;
+
+        for (int i = startingEntry; i < startingEntry + entriesPerPage * 2; i++)
+        {
+            if (i < notebookEntriesFauna.Count)
+            {
+            
+                entryTitlesFauna[i - startingEntry].text = notebookEntriesFauna[i].floraFauna.name;
+                entryDescriptionsFauna[i - startingEntry].text = notebookEntriesFauna[i].floraFauna.Description;
+                
+            }
+            else
+            {
+                entryTitlesFauna[i - startingEntry].text = "";
+                entryDescriptionsFauna[i - startingEntry].text = "";
             }
         }
 

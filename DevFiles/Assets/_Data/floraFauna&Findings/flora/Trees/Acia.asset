@@ -16,3 +16,4 @@ MonoBehaviour:
   Description: Found mostly in savannahs, I don't know why it is in this game?
   imageAsset: {fileID: 0}
   sfxName: 
+  isFlora: 1
