@@ -21,6 +21,9 @@ public class Notebook : MonoBehaviour
     public int currentEntry;
     public int entriesPerPage = 1;
 
+    public List<Entry> notebookEntriesArtifacts = new List<Entry>();
+    public List<Entry> notebookEntriesFlora = new List<Entry>();
+    public List<Entry> notebookEntriesFauna = new List<Entry>();
     public List<Entry> notebookEntries = new List<Entry>();
 
     public Text[] entryTitles;
@@ -56,7 +59,7 @@ public class Notebook : MonoBehaviour
 
     public void AddEntry(Artifact_ScriptableObject artifact)
     {
-        foreach (Entry entry in notebookEntries)
+        foreach (Entry entry in notebookEntriesArtifacts)
         {
             if (entry.type == EntryType.artifact && entry.artifact == artifact)
             {
@@ -64,20 +67,36 @@ public class Notebook : MonoBehaviour
             }
         }
 
-        notebookEntries.Add(new Entry(artifact));
+        notebookEntriesArtifacts.Add(new Entry(artifact));
     }
 
     public void AddEntry(Tree_ScriptableObject floraFauna)
     {
-        foreach (Entry entry in notebookEntries)
+        if (floraFauna.isFlora)
         {
-            if (entry.type == EntryType.artifact && entry.artifact == floraFauna)
+            foreach (Entry entry in notebookEntriesFlora)
             {
-                return;
+                if (entry.type == EntryType.artifact && entry.artifact == floraFauna)
+                {
+                    return;
+                }
             }
+            notebookEntriesFlora.Add(new Entry(floraFauna));
+        }
+        else if (!floraFauna.isFlora)
+        {
+            foreach (Entry entry in notebookEntriesFauna)
+            {
+                if (entry.type == EntryType.artifact && entry.artifact == floraFauna)
+                {
+                    return;
+                }
+            }
+            notebookEntriesFauna.Add(new Entry(floraFauna));
         }
 
-        notebookEntries.Add(new Entry(floraFauna));
+
+        
     }
 
     public void DisplayEntries(int startingEntry = 0)
