@@ -40,6 +40,7 @@ public class Notebook : MonoBehaviour
 
     public List<Location> startingLocations = new List<Location>();
 
+    public PlayerProfile profile;
     public void Start()
     {
         InitializeNotebook();
@@ -50,6 +51,21 @@ public class Notebook : MonoBehaviour
         foreach (Location location in startingLocations)
         {
             AddEntry(location);
+        }
+        foreach (Artifact_ScriptableObject artifact in profile.allArtifacts)
+        {
+            if (artifact.hasBeenDiscovered)
+            {
+                AddEntry(artifact);
+            }
+        }
+        foreach (Tree_ScriptableObject floraFauna in profile.allFloraFauna)
+        {
+            if (floraFauna.hasBeenDiscovered)
+            {
+                AddEntry(floraFauna);
+            }
+       
         }
     }
 

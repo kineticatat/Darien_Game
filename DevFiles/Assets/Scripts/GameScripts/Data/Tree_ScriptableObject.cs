@@ -12,4 +12,5 @@ public class Tree_ScriptableObject : ScriptableObject
     public Sprite imageAsset;
     public string sfxName;
     public bool isFlora;
+    public bool hasBeenDiscovered;
 }
