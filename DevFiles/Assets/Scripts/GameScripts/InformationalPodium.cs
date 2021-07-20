@@ -22,6 +22,14 @@ public class InformationalPodium : Interactable
         InspectionMenuUI.instance.menuParent.SetActive(true);
         InspectionMenuUI.instance.InspectClue(floraFaunaInformation);
 
-        Notebook.instance.AddEntry(floraFaunaInformation);
+       
+
+        if (!floraFaunaInformation.hasBeenDiscovered)
+        {
+            Notebook.instance.AddEntry(floraFaunaInformation);
+            InspectionMenuUI.instance.FoundAnItem();
+            floraFaunaInformation.hasBeenDiscovered = true;
+        }
+
     }
 }

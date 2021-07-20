@@ -18,4 +18,5 @@ MonoBehaviour:
     jrnfkerjnfkernkjcnerjkncjknerkjnckjenasdsasdl'
   imageAsset: {fileID: 0}
   sfxName: 
-  isFlora: 1
+  isFlora: 0
+  hasBeenDiscovered: 0

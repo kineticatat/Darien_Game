@@ -30,7 +30,9 @@ public class PlayerProfile : MonoBehaviour
     public int[] achievementProgress;
 
     public List<Artifact_ScriptableObject> allArtifacts = new List<Artifact_ScriptableObject>();
+    public List<Tree_ScriptableObject> allFloraFauna = new List<Tree_ScriptableObject>();
     public List<Artifact_ScriptableObject> gatheredArtifacts = new List<Artifact_ScriptableObject>();
+    public List<Tree_ScriptableObject> gatheredFloraFauna = new List<Tree_ScriptableObject>();
 
     public List<Entry> allEntries = new List<Entry>();
 
@@ -53,5 +55,15 @@ public class PlayerProfile : MonoBehaviour
         achievementProgress = player.achievementProgress;
 
 
+    }
+
+    public void AddArtifact(Artifact_ScriptableObject artifact)
+    {
+        gatheredArtifacts.Add(artifact);
+    }
+
+    public void AddFloraFauna(Tree_ScriptableObject floraFauna)
+    {
+        gatheredFloraFauna.Add(floraFauna);
     }
 }
