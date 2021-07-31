@@ -9,11 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c44976c58e7ef54e909f6b2ae56fb06, type: 3}
-  m_Name: Artifact 1
+  m_Script: {fileID: 11500000, guid: 5175eacd7b521c04ea928b75fd95fbc1, type: 3}
+  m_Name: Brown-headed Spider Monkey
   m_EditorClassIdentifier: 
-  artifactName: 
-  artifactDescription: 
+  name: Brown-Headed Spider Monkey
+  Description: 
+  imageAsset: {fileID: 0}
   sfxName: 
-  artifactImage: {fileID: 0}
+  isFlora: 0
   hasBeenDiscovered: 0

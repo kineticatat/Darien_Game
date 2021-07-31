@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5175eacd7b521c04ea928b75fd95fbc1, type: 3}
+  m_Name: Jagua Fruit
+  m_EditorClassIdentifier: 
+  name: Jagua Fruit
+  Description: "  -Genipa Americana\r\n  -Juice used as tattoo / body paint (ebony
+    color)\r\r\n  -The jagua is an inedible fruit which the Waounan and Embera people
+    have long used as a body dye. The fruit is hard and needs to be grated. The pulp
+    is then mixed with a very small amount of water and squeezed by hand or inside
+    a piece of fabric to extract a liquid that darkens as it oxidizes. To make it
+    stronger, the liquid is often heated in a pan over a fire to make it more viscous.
+    Then the jagua juice is ready to be applied directly on dry skin. It dries in
+    minutes and the indelible markings cannot be removed with any type of soap, detergent
+    or chemicals. It remains in the skin until the upper layer of skin is naturally
+    exfoliated by the body. \r\n"
+  imageAsset: {fileID: 0}
+  sfxName: 
+  isFlora: 1
+  hasBeenDiscovered: 0

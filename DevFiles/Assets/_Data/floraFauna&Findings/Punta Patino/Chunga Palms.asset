@@ -22,3 +22,4 @@ MonoBehaviour:
   imageAsset: {fileID: 21300000, guid: 5f5dd61b189e9774b8cdbb4bb9a7ff80, type: 3}
   sfxName: oophagaPumilioFrog
   isFlora: 1
+  hasBeenDiscovered: 0

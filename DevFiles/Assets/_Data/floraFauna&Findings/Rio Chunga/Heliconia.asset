@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5175eacd7b521c04ea928b75fd95fbc1, type: 3}
+  m_Name: Heliconia
+  m_EditorClassIdentifier: 
+  name: Heliconia
+  Description: 'Heliconia leaves are characteristically long and oblong, often forming
+    large clumps with age. Their flowers are produced on long, erect or drooping
+    panicles, and consist of brightly colored, waxy bracts, with small true flowers
+    peeping out from the bracts. They also look like lobster claws. The growth habit
+    of heliconias is similar to Canna, Strelitzia, and bananas, to which they are
+    related. The flowers can be hues of reds, oranges, yellows, and greens, and are
+    subtended by brightly colored bracts. Floral shape often limits pollination to
+    a subset of the hummingbirds in the region. '
+  imageAsset: {fileID: 0}
+  sfxName: 
+  isFlora: 1
+  hasBeenDiscovered: 0

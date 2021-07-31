@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5175eacd7b521c04ea928b75fd95fbc1, type: 3}
+  m_Name: Panama Slender Possum
+  m_EditorClassIdentifier: 
+  name: Panama Slender Possum
+  Description: "  - Marmosops invictus\r\n  - Description / Info: The Panama slender
+    opossum (Marmosops invictus), also known as the slaty slender mouse opossum,
+    is a species of opossum in the family Didelphidae. It is endemic to Panama, where
+    it has been found in tropical rainforest habitats, including disturbed areas,
+    at elevations from 500 to 1500 m. This opossum is mostly terrestrial in its habits,
+    and feeds on plants and insects. It is vulnerable to deforestation. "
+  imageAsset: {fileID: 0}
+  sfxName: 
+  isFlora: 0
+  hasBeenDiscovered: 0
