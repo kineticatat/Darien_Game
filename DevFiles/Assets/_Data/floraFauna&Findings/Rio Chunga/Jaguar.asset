@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Jaguar
   Description: 
-  imageAsset: {fileID: 0}
+  imageAsset: {fileID: 21300000, guid: 8656e3a3487ff3c478a9a0ec20a10e0c, type: 3}
   sfxName: 
   isFlora: 0
   hasBeenDiscovered: 0

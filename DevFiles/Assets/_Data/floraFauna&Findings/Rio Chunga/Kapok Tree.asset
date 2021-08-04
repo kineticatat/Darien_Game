@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Kapok Tree
   Description: 
-  imageAsset: {fileID: 0}
+  imageAsset: {fileID: 21300000, guid: fae9c2c4228aa44449f8148fb08b59fb, type: 3}
   sfxName: 
   isFlora: 1
   hasBeenDiscovered: 0

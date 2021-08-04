@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Brown-Headed Spider Monkey
   Description: 
-  imageAsset: {fileID: 0}
+  imageAsset: {fileID: 21300000, guid: 19dbd15eefcc6f543aaa90432456d327, type: 3}
   sfxName: 
   isFlora: 0
   hasBeenDiscovered: 0

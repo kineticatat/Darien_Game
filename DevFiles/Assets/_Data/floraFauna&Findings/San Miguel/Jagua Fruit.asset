@@ -23,7 +23,7 @@ MonoBehaviour:
     minutes and the indelible markings cannot be removed with any type of soap, detergent
     or chemicals. It remains in the skin until the upper layer of skin is naturally
     exfoliated by the body. \r\n"
-  imageAsset: {fileID: 0}
+  imageAsset: {fileID: 21300000, guid: a143de6b73bf2424a9d2cf4164c1b3ad, type: 3}
   sfxName: 
   isFlora: 1
   hasBeenDiscovered: 0
