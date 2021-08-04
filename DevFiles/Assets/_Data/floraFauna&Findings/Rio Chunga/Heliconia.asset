@@ -21,7 +21,7 @@ MonoBehaviour:
     related. The flowers can be hues of reds, oranges, yellows, and greens, and are
     subtended by brightly colored bracts. Floral shape often limits pollination to
     a subset of the hummingbirds in the region. '
-  imageAsset: {fileID: 0}
+  imageAsset: {fileID: 21300000, guid: 7ea1d1333b960894ca1fd6c85d664e5c, type: 3}
   sfxName: 
   isFlora: 1
   hasBeenDiscovered: 0
