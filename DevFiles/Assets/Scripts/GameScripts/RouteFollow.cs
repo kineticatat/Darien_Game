@@ -11,6 +11,9 @@ public class RouteFollow : MonoBehaviour
     private float speedModifier;
     private bool coroutineAllowed;
     public GameObject canoe;
+    public GameObject conoestay;
+    public GameObject player;
+    public Transform noParent;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +22,7 @@ public class RouteFollow : MonoBehaviour
         tParam = 0f;
         speedModifier = 0.01f;
         coroutineAllowed = true;
+        conoestay.SetActive(false);
     }
 
     // Update is called once per frame
@@ -54,11 +58,13 @@ public class RouteFollow : MonoBehaviour
         }
 
         tParam = 0f;
+        conoestay.transform.position = canoe.transform.position;
+        conoestay.SetActive(true);
+        player.transform.SetParent(noParent);
+        
+        Destroy(gameObject);
         routeToGo += 1;
-        if (routeToGo > routes.Length - 1)
-        {
-            routeToGo = 0;
-        }
+       
 
         coroutineAllowed = true;
     }

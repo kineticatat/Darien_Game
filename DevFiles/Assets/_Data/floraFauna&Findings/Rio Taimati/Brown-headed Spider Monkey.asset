@@ -13,7 +13,14 @@ MonoBehaviour:
   m_Name: Brown-headed Spider Monkey
   m_EditorClassIdentifier: 
   name: Brown-Headed Spider Monkey
-  Description: 
+  Description: "- Ateles fusciceps\r\n- Description / Info: The brown-headed spider
+    monkey is endemic to Ecuador, Colombia, and Panama. There are two known subspecies:
+    Ateles fusciceps fusciceps, also called the brown-headed spider monkey, found
+    in the Andes tropical and subtropical humid forests of northwestern Ecuador,
+    and Ateles fusciceps rufiventris, the Colombian black spider monkey, found in
+    the dry, humid, and cloud forests of southwestern Colombia and in Panama. All
+    live in forests at altitudes between 300 and 5,580 ft (100-1,700 m) above sea
+    level. \r\n"
   imageAsset: {fileID: 21300000, guid: 19dbd15eefcc6f543aaa90432456d327, type: 3}
   sfxName: 
   isFlora: 0

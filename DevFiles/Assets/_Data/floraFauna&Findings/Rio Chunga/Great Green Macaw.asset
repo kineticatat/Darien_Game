@@ -13,7 +13,26 @@ MonoBehaviour:
   m_Name: Great Green Macaw
   m_EditorClassIdentifier: 
   name: Great Green Macaw
-  Description: 
+  Description: '- Ara ambiguus
+
+    - Description / Info: The Great Green Macaw
+    is one of the largest macaws in the world (second only to the Hyacinth Macaw).
+    It''s also known as the Buffon''s or Great Military Macaw and in fact was previously
+    considered a subspecies of the smaller, closely-related Military Macaw.
+
+    -
+    Numbers of this majestic macaw have dropped by more than 50 percent over the
+    past 10 years due to extensive habitat loss throughout the species'' Central
+    and South American range. It was listed as an endangered species by the United
+    States in 2015.
+
+    - Unsustainable logging, conversion of land for agriculture
+    and cattle pasture, and mining have severely diminished available habitat for
+    the Great Green Macaw. Unfortunately, farmers sometimes shoot the birds, believing
+    that they are a crop pest. The birds are also captured for the pet trade and
+    for their feathers
+
+'
   imageAsset: {fileID: 21300000, guid: 17ad01f47e262f24ea41002b311bd420, type: 3}
   sfxName: 
   isFlora: 0

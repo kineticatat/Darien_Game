@@ -13,7 +13,17 @@ MonoBehaviour:
   m_Name: Jaguar
   m_EditorClassIdentifier: 
   name: Jaguar
-  Description: 
+  Description: '- Panthera onca
+
+    - Description / Info: The jaguar (Panthera
+    onca) is a large felid species and the only living member of the genus Panthera
+    native to the Americas. Its preferred habitats are usually swamps and wooded
+    regions, but jaguars also live in scrublands and deserts. The jaguar is virtually
+    extinct in the northern part of its original range and survives in reduced numbers
+    only in remote areas of Central and South America; the largest known population
+    exists in the Amazon rainforest.
+
+'
   imageAsset: {fileID: 21300000, guid: 8656e3a3487ff3c478a9a0ec20a10e0c, type: 3}
   sfxName: 
   isFlora: 0

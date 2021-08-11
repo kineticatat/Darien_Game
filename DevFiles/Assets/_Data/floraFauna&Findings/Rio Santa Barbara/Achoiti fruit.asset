@@ -13,7 +13,16 @@ MonoBehaviour:
   m_Name: Achoiti fruit
   m_EditorClassIdentifier: 
   name: Achoiti fruit
-  Description: 
+  Description: '- Bixa orellana
+
+    - Fruits of an achiote shrub are heart-shaped,
+    brown or reddish brown at maturity, and are covered with short stiff hairs. Achiote
+    dye is prepared by stirring the seeds in water and can be used to color butter,
+    cheese, rice and other foods. Women of the Embera would add a bit of red color
+    on their faces with the natural dye of achiote or to dye fibers for their craft.
+    Red was often extracted from the achiote berry, which was boiled with the fiber.
+
+'
   imageAsset: {fileID: 21300000, guid: 27faf9729f168734997f63d005c87040, type: 3}
   sfxName: 
   isFlora: 1
