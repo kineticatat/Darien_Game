@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class triggerCommuntiyEvent : MonoBehaviour
 {
+    public CommunityEventManager eventtrigger;
+    public CommunityEvent_ScriptableObject triggeredEvent;
     private void OnTriggerEnter(Collider other)
     {
-       //call communtity event 
+        eventtrigger.TriggerDialogue(triggeredEvent);
     }
+    
 }

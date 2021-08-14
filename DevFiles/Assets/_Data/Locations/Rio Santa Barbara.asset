@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c2c1bb900b43de41bc1194130cca7c5, type: 3}
   m_Name: Rio Santa Barbara
   m_EditorClassIdentifier: 
-  position: {x: 0.5, y: 0.5}
+  position: {x: 0.6, y: 0.5}
   locationName: Rio Santa Barbara
   locationDescription: 
   locationSprite: {fileID: 21300000, guid: 09acfc2334f51ba448186e64f72c8287, type: 3}
