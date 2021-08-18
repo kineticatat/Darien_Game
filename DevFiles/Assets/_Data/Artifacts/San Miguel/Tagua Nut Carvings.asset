@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c44976c58e7ef54e909f6b2ae56fb06, type: 3}
   m_Name: Tagua Nut Carvings
   m_EditorClassIdentifier: 
-  artifactName: Tagua Nut Carvings
-  artifactDescription: 
+  artifactName: Tagua Nut
+  artifactDescription: " - Nut from a tree\r\n - Found in grape-like clusters\r\n
+    - When dried become very hard and can be carved\r\n\t- Outer layer is brown\r\n\t-
+    Inside is white\r\n\t- After polishing becomes ivory\r\n - Tagua, also known
+    as vegetable ivory, comes from a type of nut that grows on a palm tree. When
+    mature the nuts are dried and then cut or carved into beautiful sculptures, jewelry,
+    and souvenirs."
   sfxName: 
   artifactImage: {fileID: 0}
   hasBeenDiscovered: 0
